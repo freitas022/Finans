@@ -17,6 +17,7 @@
     <!-- Estilo customizado -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+
     <title>Finans - finanças pessoais</title>
 </head>
 
@@ -30,7 +31,7 @@
                     <img src="img/logo.png" width="142">
                 </a>
 
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal" onclick="btnMobile()">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -49,7 +50,7 @@
                             <a href="" class="nav-link text-white">Preços</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="btn btn-outline-light ml-4">Entrar</a>
+                            <a href="" class="btn btn-outline-light ml-4" onclick="formLogin()">Entrar</a>
                         </li>
                     </ul>
                 </div>
@@ -62,8 +63,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 d-flex"><!-- Textos da seção -->
-                    <div class="align-self-center">
-                        <h1>Suas contas, descomplicadas</h1>
+                    <div class="align-self-center texto-caixa">
+                        <h1 class="display-4">Suas contas, descomplicadas</h1>
                         <p>
                             Usado por mais de 1 milhão de pessoas, o Finans é uma ferramenta online que vai facilitar
                             sua vida financeira.
@@ -73,16 +74,16 @@
                             <div class="input-group input-group-lg">
                                 <input type="text" placeholder="Seu e-mail" class="form-control">
                                 <div class="input-group-append">
-                                    <button type="button" class="btn btn-primary">Cadastre-se</button>
+                                    <button type="button" class="btn btn-primary btn-fluid">Cadastre-se</button>
                                 </div>
                             </div>
                         </form>
 
                         <p>Disponível para
-                            <a href="" class="btn btn-outline-light">
+                            <a href="#" class="btn btn-outline-light">
                                 <i class="fab fa-android fa-lg"></i>
                             </a>
-                            <a href="" class="btn btn-outline-light">
+                            <a href="#" class="btn btn-outline-light">
                                 <i class="fab fa-apple"></i>
                             </a>
                         </p>
@@ -90,7 +91,7 @@
                     </div>
                 </div><!--/fim textos da seção -->
                 <div class="col-md-6 d-none d-md-block">
-                    <img src="img/capa-mulher.png" id="capa-mulher">
+                    <img src="img/capa-mulher.png" class="img-fluid" id="capa-mulher">
                 </div>
             </div>
         </div>
@@ -100,16 +101,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 d-flex">
-                    <div class="align-self-center">
+                    <div class="align-self-center texto-caixa">
                         <h2>Saiba para onde vai o seu dinheiro</h2>
                         <p>
                             Com o Finans, você categoriza todos os seus lançamentos. Com gráficos simples, você sabe de
                             onde vem e para onde vai o seu dinheiro.
                         </p>
-                        <a href="" class="btn btn-primary">Veja mais</a>
+                        <a href="#" class="btn btn-primary">Veja mais</a>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 btn-caixa">
                     <img src="img/saiba.png" class="img-fluid">
                 </div>
             </div>
@@ -119,27 +120,27 @@
     <section class="caixa"><!--/Início seção juros -->
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 btn-caixa">
                     <img src="img/juros.png" class="img-fluid">
                 </div>
                 <div class="col-md-6 d-flex">
-                    <div class="align-self-center">
+                    <div class="align-self-center texto-caixa">
                         <h2>Pare de pagar juros e economize</h2>
                         <p>
                             Manter as contas em dia é sempre um problema? O Finans avisa você: receba alertas de contas
                             a pagar e a receber!
                         </p>
-                        <a href="" class="btn btn-primary">Veja mais</a>
+                        <a href="#" class="btn btn-primary">Veja mais</a>
                     </div>
                 </div>
             </div>
         </div>
     </section><!--/FIM seção juros -->
 
-    <section class="caixa"><!--/Início seção recursos -->
+    <section class="caixa2"><!--/Início seção recursos -->
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 texto-caixa">
                     <img src="img/facil.png" class="img-fluid">
                     <h4>Fácil de usar</h4>
                     <p>
@@ -147,7 +148,7 @@
                         finanças. Simples como tem que ser!
                     </p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 texto-caixa">
                     <img src="img/economize.png" class="img-fluid">
                     <h4>Economize seu tempo</h4>
                     <p>
@@ -155,7 +156,7 @@
                         realmente importa pra você!
                     </p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 texto-caixa">
                     <img src="img/suporte.png" class="img-fluid">
                     <h4>Suporte amigo</h4>
                     <p>
@@ -169,25 +170,24 @@
 
     <footer class="mt-4 mb-4 bg-dark">
         <div class="container">
-        <div class="text-center">
-            <a href="#" class="btn">
-                <i class="fab fa-facebook text-white"></i>
-            </a>
-            <a href="#" class="btn ml-2">
-                <i class="fab fa-twitter text-white"></i>
-            </a>
-            <a href="#" class="btn ml-2">
-                <i class="fab fa-instagram text-white"></i>
-            </a>
-            <a href="#" class="btn ml-2">
-                <i class="fab fa-youtube text-white"></i>
-            </a>
-            <p class="text-white font-weight-bold p-3">&copy; Todos os direitos reservados - Finans 2022</p>
-        </div>
+            <div class="text-center">
+                <a href="#" class="btn">
+                    <i class="fab fa-facebook text-white"></i>
+                </a>
+                <a href="#" class="btn ml-2">
+                    <i class="fab fa-twitter text-white"></i>
+                </a>
+                <a href="#" class="btn ml-2">
+                    <i class="fab fa-instagram text-white"></i>
+                </a>
+                <a href="#" class="btn ml-2">
+                    <i class="fab fa-youtube text-white"></i>
+                </a>
+                <p class="text-white font-weight-bold p-3">&copy; Todos os direitos reservados - Finans 2022</p>
+            </div>
     </footer>
-
-
-    <!-- JavaScript (Opcional) -->
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
